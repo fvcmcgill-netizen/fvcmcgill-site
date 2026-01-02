@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* ========== Global Styles ========== */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #212529;
+  }
+  
+  /* Use red + black color palette */
+  :root {
+    --fvc-red: #7b0000;
+    --fvc-light-red: #b30000;
+    --fvc-black: #212529;
+    --fvc-white: #ffffff;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+  }
+  
+  /* Navbar customization */
+  .navbar {
+    background-color: var(--fvc-black);
+  }
+  .navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .nav-link {
+    color: var(--fvc-white) !important;
+  }
+  .nav-link:hover {
+    color: var(--fvc-light-red) !important;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-color: var(--fvc-red);
+    color: var(--fvc-white);
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background-color: var(--fvc-black);
+    color: var(--fvc-white);
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  .cta-section .btn {
+    border-radius: 0;
+    font-weight: bold;
+  }
+  
+  /* Mission Image */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: var(--fvc-white);
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: var(--fvc-light-red);
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  .btn-outline-light {
+    border-color: var(--fvc-white);
+  }
+  .btn-outline-light:hover {
+    background-color: var(--fvc-light-red);
+    border-color: var(--fvc-light-red);
+    color: var(--fvc-white);
+  }
+  
+  .btn-light {
+    background-color: var(--fvc-white);
+    color: var(--fvc-red);
+    border: none;
+  }
+  .btn-light:hover {
+    background-color: var(--fvc-light-red);
+    color: var(--fvc-white);
+  }
+  
+  /* Responsive overrides */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 60px 0;
+    }
+    .cta-section {
+      padding: 60px 0;
+    }
+  }  
